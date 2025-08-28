@@ -105,7 +105,7 @@ Here’s a good **touchscreen-friendly control layout** that maps the PC keys to
  │                                               │
  │                                               │
  │                                               │
- │   ⬅️    ➡️        [Brake]     [Accelerate]    │
+ │   ⬅️    ➡️        [Brake]     [Accelerate]   │
  │                [Drift]                        │
  └───────────────────────────────────────────────┘
 ```
