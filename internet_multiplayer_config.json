@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "multiplayer": {
+    "enabled": true,
+    "mode": "internet",
+    "max_players": 8,
+    "default_port": 25565,
+    "heartbeat_interval": 30,
+    "timeout": 60
+  },
+  
+  "matchmaking": {
+    "master_server_url": "https://matchmaking.rally-game.com",
+    "auto_connect": true,
+    "region": "auto",
+    "preferred_game_mode": "race",
+    "max_ping": 150,
+    "refresh_interval": 30
+  },
+  
+  "nat_traversal": {
+    "enabled": true,
+    "stun_servers": [
+      "stun.l.google.com:19302",
+      "stun1.l.google.com:19302", 
+      "stun2.l.google.com:19302",
+      "stun.stunprotocol.org:3478"
+    ],
+    "turn_servers": [
+      "turn.rally-game.com:3478",
+      "turn2.rally-game.com:3478"
+    ],
+    "ice_timeout": 5000,
+    "fallback_to_relay": true
+  },
+  
+  "security": {
+    "encryption_enabled": true,
+    "auth_required": true,
+    "token_expiry_hours": 24,
+    "rate_limiting": {
+      "max_requests_per_minute": 60,
+      "max_connections_per_ip": 5,
+      "ban_duration_minutes": 60
+    },
+    "cheat_detection": {
+      "enabled": true,
+      "max_speed": 50.0,
+      "max_acceleration": 2.0,
+      "teleport_threshold": 50.0,
+      "auto_ban_threshold": 10
+    }
+  },
+  
+  "network": {
+    "compression": true,
+    "update_rate": 10,
+    "interpolation": true,
+    "prediction": true,
+    "lag_compensation": true,
+    "packet_loss_recovery": true
+  },
+  
+  "regions": {
+    "available_regions": [
+      {"id": "na-west", "name": "North America West", "ping_server": "ping-na-west.rally-game.com"},
+      {"id": "na-east", "name": "North America East", "ping_server": "ping-na-east.rally-game.com"},
+      {"id": "eu-west", "name": "Europe West", "ping_server": "ping-eu-west.rally-game.com"},
+      {"id": "eu-central", "name": "Europe Central", "ping_server": "ping-eu-central.rally-game.com"},
+      {"id": "asia", "name": "Asia Pacific", "ping_server": "ping-asia.rally-game.com"},
+      {"id": "sa", "name": "South America", "ping_server": "ping-sa.rally-game.com"}
+    ],
+    "auto_region_detection": true,
+    "fallback_region": "na-west"
+  },
+  
+  "logging": {
+    "level": "info",
+    "file": "multiplayer.log",
+    "max_size_mb": 10,
+    "backup_count": 5
+  },
+  
+  "ui": {
+    "server_browser": true,
+    "ping_display": true,
+    "connection_status": true,
+    "player_list": true,
+    "chat_enabled": true
+  }
+}
